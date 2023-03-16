@@ -1,0 +1,129 @@
+{% load static %}
+        body {
+            background-image: url('/static/css/pic6.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #topic1 {
+            color: white !important;
+            font-family: 'Segoe UI';
+            min-width: 400px;
+            margin-top: 150px;
+            margin-left: 20px;
+            text-align: left;
+            background-color: transparent;
+        }
+
+        #topic2 {
+            color: white !important;
+            font-family: 'Segoe UI';
+            margin-left: 20px;
+            text-align: left;
+            background-color: transparent;
+        }
+
+        #topic2 h1 {
+            font-family: monospace;
+            font-size: 70px;
+            font-weight: 100;
+            margin-left: 20px;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            text-shadow: 5px 5px 12px #e0d569;
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0)
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0)
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0)
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        #topic pre {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            animation: pop 1s ease-in-out;
+        }
+
+        #main {
+            color: white !important;
+        }
+
+        #side1 {
+            margin-top: 180px;
+            margin-left: 100px;
+            background: transparent;
+            color: rgb(241, 241, 216);
+            font-weight: 500;
+            font-size: 25px !important;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .word {
+            font-family: cursive !important;
+            color: rgb(117, 222, 222)
+        }
+
+        .card-title {
+            font-size: 40px;
+        }
+
+        .card-content {
+            background: linear-gradient( to right, black, rgb(29, 28, 28), transparent);
+            color: white;
+            margin-top: 20px;
+            padding: 4px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .card-content2 {
+            font-size: 270px;
+            padding-left: 100px;
+        }
+
+        .fa {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 3px white;
+        }
+
+        .btn {
+            margin: 5px;
+            margin-top: 25px;
+            border: solid 3px white;
+            border-radius: 20px;
+            background: linear-gradient( to right, rgb(255, 183, 0), rgb(220, 154, 10));
+            color: white;
+        }
+
+        .btn:hover {
+            color: white;
+            background: linear-gradient( to right, black, rgb(29, 28, 28), transparent);
+        }
