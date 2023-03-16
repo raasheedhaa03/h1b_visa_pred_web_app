@@ -1,1 +1,1 @@
-web: gunicorn h1b.wsgi --log-file -
+web: gunicorn h1b_visa.wsgi --log-file -
