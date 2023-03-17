@@ -123,7 +123,9 @@ STATIC_ROOT = ''
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = ('static',)
+STATICFILES_DIRS = (
+    '/absolute_path_to_project/mealmate/static',
+)
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, '/static/'),
 #]
