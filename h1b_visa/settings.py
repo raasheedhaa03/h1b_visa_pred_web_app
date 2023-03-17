@@ -119,13 +119,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 import os
-STATIC_ROOT = ''
+STATIC_URL = '/static/' 
 
-STATIC_URL = '/static/'
+STATIC_ROOT = 'static' (You have to add it to the code)
 
-STATICFILES_DIRS = (
-    '/absolute_path_to_project/mealmate/static',
-)
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, '/static') ] (You have to add it to the code)
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, '/static/'),
 #]
