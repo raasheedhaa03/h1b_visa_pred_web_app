@@ -125,10 +125,10 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 STATICFILES_DIRS = [
-    path.join(TOP_DIR, 'static'),
+    path.join(BASE_DIR, 'static'),
 ]
 
-STATIC_ROOT = path.join(TOP_DIR, 'staticfiles')
+STATIC_ROOT = path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Default primary key field type
