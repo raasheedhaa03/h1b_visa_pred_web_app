@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    #'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,8 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '/static/'),
-    os.path.join(BASE_DIR, '/static/css/'),
-    os.path.join(BASE_DIR, '/static/js/'),
 ]
 
 STATICFILES_FINDERS = (
