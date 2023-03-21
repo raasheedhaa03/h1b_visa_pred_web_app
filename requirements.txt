@@ -17,9 +17,5 @@ h5py
 Jinja2
 Keras
 Pillow
-request
 tensorboard
 tensorflow
-tqdm
-urllib3
-utils
