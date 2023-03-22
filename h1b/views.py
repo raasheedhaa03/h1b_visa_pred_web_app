@@ -38,9 +38,7 @@ def forminfo(request):
 
     model = pickle.load(open('model/ml_model.sav', 'rb'))
     scaled = pickle.load(open('model/scaler.sav', 'rb'))
-    with open('model/encoder.sav', 'rb') as f:
-        enc= pd.read_pickle(f)
-    #enc=pickle.load(open('model/encoder.sav', 'rb'))
+    enc=pickle.load(open('model/encoder.sav', 'rb'))
     user_input['PREVAILING_WAGE']=scaled.transform(user_input[['PREVAILING_WAGE']])
     enc1=enc.transform(user_input)
 
