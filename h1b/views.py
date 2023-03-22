@@ -11,12 +11,12 @@ def check(request):
     return render(request,'newform2.html')
 
 def forminfo(request):
-    EMPLOYER_NAME=request.get("emp")
-    JOB_TITLE=request.get("job")
-    SOC_NAME=request.get("soc")
-    FULL_TIME_POSITION=request.get("full")
-    PREVAILING_WAGE=request.get("wage")
-    WORKSITE=request.get("work")
+    EMPLOYER_NAME=request.POST["emp"]
+    JOB_TITLE=request.POST["job"]
+    SOC_NAME=request.POST["soc"]
+    FULL_TIME_POSITION=request.POST["full"]
+    PREVAILING_WAGE=request.POST["wage"]
+    WORKSITE=request.POST["work"]
     if len(EMPLOYER_NAME) == 0:
             emp_name = None
     if len(JOB_TITLE)  == 0:
