@@ -19,4 +19,3 @@ Keras
 Pillow
 tensorboard
 tensorflow
-Python
