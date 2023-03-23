@@ -3,6 +3,8 @@ from django.http import HttpResponse
 import pickle
 import pandas as pd
 import numpy as np
+from urllib.request import urlopen
+import cloudpickle as cp
 
 def predictor(request):
     return render(request,'index1.html')
@@ -38,7 +40,8 @@ def forminfo(request):
 
     model = pickle.load(open('model/ml_model.sav', 'rb'))
     scaled = pickle.load(open('model/scaler.sav', 'rb'))
-    enc=pickle.load(open('model/encoder.sav', 'rb'))
+    enc=cp.load(open("https://drive.google.com/file/d/1ppZEEdGXpJOXQVQBxA1mb2fFQ3JMMfjy/view?usp=share_link",'rb'))
+    #enc=pickle.load(open('model/encoder.sav', 'rb'))
     user_input['PREVAILING_WAGE']=scaled.transform(user_input[['PREVAILING_WAGE']])
     enc1=enc.transform(user_input)
 
